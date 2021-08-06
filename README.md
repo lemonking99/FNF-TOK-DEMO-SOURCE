@@ -20,7 +20,7 @@ Links: **[GameBanana demo page](https://gamebanana.com/gamefiles/16761)**
 
 
 
-# Previews ([skip](#features))
+# Previews ([skip](#new-features))
 
 ![Demo Menu](https://user-images.githubusercontent.com/84978816/128432171-7cf135eb-ba5a-4a8f-ba1d-de549e04361b.png)
 
