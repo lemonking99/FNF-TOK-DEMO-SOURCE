@@ -5,11 +5,11 @@
 # Friday Night Funkin': The Origami King
 
 
-Prepare for an epic advneture! **Friday Night Funkin: The Origami King** is a mod for Friday Night Funkin' that follows Boyfriend as he tries to cure Girlfriend from being folded, a curse placed on her from the leader of the Folded soldiers, King Olly.
+Prepare for an epic adventure! **Friday Night Funkin: The Origami King** is a mod for Friday Night Funkin' that follows Boyfriend as he tries to cure Girlfriend from being folded; a curse placed on her from the leader of the Folded soldiers, King Olly.
 
 **THIS IS ONLY A DEMO MADE FOR F3. THIS IS NOT THE FULL RELEASE**
 
-Links: **[GameBanana demo page](https://gamebanana.com/gamefiles/16761)**
+Links: **GameBanana demo page - Coming Soon!**
 
 ### The Team:
 - [NinKey](https://twitter.com/NinKey69) - Director/Artist
@@ -43,12 +43,12 @@ Links: **[GameBanana demo page](https://gamebanana.com/gamefiles/16761)**
 
 and more...
 
-**New Songs, Stages, Characters**
-**New Freeplay Menu**
-**Custom Colored Health Bars**
-**Health Bar Halved Mechanic**
-**New Death Animation + SFX**
-**🚨GF IS FLAT NOW🚨**
+**- New Songs, Stages, Characters**
+**- New Freeplay Menu**
+**- Custom Colored Health Bars**
+**- Health Bar Halved Mechanic**
+**- New Death Animation + SFX**
+**- 🚨GF IS FLAT NOW🚨**
 
 ## How To Compile
 

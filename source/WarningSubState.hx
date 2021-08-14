@@ -22,6 +22,7 @@ class WarningSubState extends MusicBeatState
 		bg.screenCenter();
 		add(bg);
 		
+		
 		var OrigamiLogo:FlxSprite = new FlxSprite(0, 0).loadGraphic(Paths.image('TheOrigamiKingLogo'));
 		OrigamiLogo.setGraphicSize(Std.int(OrigamiLogo.width * 0.3));
 		//OrigamiLogo.x += 100;

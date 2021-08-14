@@ -161,8 +161,6 @@ class PlayState extends MusicBeatState
 	var notesHitArray:Array<Date> = [];
 	var currentFrames:Int = 0;
 
-	public var dialogue:Array<String> = ['dad:blah blah blah', 'bf:coolswag'];
-
 	var chapterload:FlxSprite;
 
 	var halloweenBG:FlxSprite;
@@ -330,44 +328,7 @@ class PlayState extends MusicBeatState
 		Conductor.changeBPM(SONG.bpm);
 
 		trace('INFORMATION ABOUT WHAT U PLAYIN WIT:\nFRAMES: ' + Conductor.safeFrames + '\nZONE: ' + Conductor.safeZoneOffset + '\nTS: ' + Conductor.timeScale + '\nBotPlay : ' + FlxG.save.data.botplay);
-	
-		//dialogue shit
-		switch (songLowercase)
-		{
-			case 'tutorial':
-				dialogue = ["Hey you're pretty cute.", 'Use the arrow keys to keep up \nwith me singing.'];
-			case 'bopeebo':
-				dialogue = [
-					'HEY!',
-					"You think you can just sing\nwith my daughter like that?",
-					"If you want to date her...",
-					"You're going to have to go \nthrough ME first!"
-				];
-			case 'fresh':
-				dialogue = ["Not too shabby boy.", ""];
-			case 'dadbattle':
-				dialogue = [
-					"gah you think you're hot stuff?",
-					"If you can beat me here...",
-					"Only then I will even CONSIDER letting you\ndate my daughter!"
-				];
-			case 'senpai':
-				dialogue = CoolUtil.coolTextFile(Paths.txt('senpai/senpaiDialogue'));
-			case 'roses':
-				dialogue = CoolUtil.coolTextFile(Paths.txt('roses/rosesDialogue'));
-			case 'thorns':
-				dialogue = CoolUtil.coolTextFile(Paths.txt('thorns/thornsDialogue'));
-			case 'picnicroad':
-			if (FlxG.save.data.english)
-				dialogue = CoolUtil.coolTextFile(Paths.txt('picnicroad/dialogspanish'));
-			else
-				dialogue = CoolUtil.coolTextFile(Paths.txt('picnicroad/dialog'));
-			case 'redstreamerbattle':
-			if (FlxG.save.data.english)
-				dialogue = CoolUtil.coolTextFile(Paths.txt('redstreamerbattle/dialogspanish'));
-			else
-				dialogue = CoolUtil.coolTextFile(Paths.txt('redstreamerbattle/dialog'));
-		}
+
 
 		switch(SONG.stage)
 		{
@@ -376,7 +337,7 @@ class PlayState extends MusicBeatState
 				defaultCamZoom = 0.7;
 				curStage = 'picnicstage';
 					
-					var sky:FlxSprite = new FlxSprite(-400, -150).loadGraphic(Paths.image('background/pr/picnicroadsky', 'chapter1'));
+					var sky:FlxSprite = new FlxSprite(-390, -100).loadGraphic(Paths.image('background/pr/picnicroadsky', 'chapter1'));
 					sky.antialiasing = true;
 					sky.scrollFactor.set(0.9, 0.9);
 					sky.active = false;
@@ -385,14 +346,12 @@ class PlayState extends MusicBeatState
 
 					var road:FlxSprite = new FlxSprite(-400, -150).loadGraphic(Paths.image('background/pr/picnicroadbg', 'chapter1'));
 					road.antialiasing = true;
-					road.scrollFactor.set(0.9, 0.9);
 					road.active = false;
 					road.updateHitbox();
 					add(road);
 
 					var topflowers:FlxSprite = new FlxSprite(-400, -150).loadGraphic(Paths.image('background/pr/topdoopaflowashoopa-its3am', 'chapter1'));
 					topflowers.antialiasing = true;
-					topflowers.scrollFactor.set(0.9, 0.9);
 					topflowers.active = false;
 					topflowers.updateHitbox();
 					add(topflowers);
@@ -401,7 +360,6 @@ class PlayState extends MusicBeatState
 					flowers.frames = Paths.getSparrowAtlas('background/pr/flowers','chapter1');
 					flowers.animation.addByPrefix('flowerbop', "flowerbop", 24, false);
 					flowers.antialiasing = true;
-					flowers.scrollFactor.set(0.9, 0.9);
 					flowers.updateHitbox();
 					if(FlxG.save.data.distractions){
 						add(flowers);
@@ -454,13 +412,13 @@ class PlayState extends MusicBeatState
 
 				var discofloor:FlxSprite = new FlxSprite(-400, -150).loadGraphic(Paths.image('background/disco/DiscoStage', 'chapter3'));
 					discofloor.antialiasing = true;
-					discofloor.scrollFactor.set(0.9, 0.9);
+					//discofloor.scrollFactor.set(0.9, 0.9);
 					discofloor.active = false;
 					discofloor.updateHitbox();
 					add(discofloor);
 					
 
-				toadpunchbop = new FlxSprite(-380, 720);
+				toadpunchbop = new FlxSprite(-380, 760);
 				toadpunchbop.frames = Paths.getSparrowAtlas('background/disco/changingstuff','chapter3');
 				toadpunchbop.animation.addByPrefix('holepunchbop', 'frontbop', 24, false);
 				toadpunchbop.antialiasing = true;
@@ -477,13 +435,7 @@ class PlayState extends MusicBeatState
 					DiscoLight.active = true;
 					DiscoLight.screenCenter();
 					DiscoLight.updateHitbox();
-					DiscoLight.alpha = 0.6;
-
-					darken = new FlxSprite(-250, 0).makeGraphic(FlxG.width * 4, FlxG.height * 4, FlxColor.BLACK);
-					darken.screenCenter();
-					darken.alpha = 0.4;
-
-				
+					DiscoLight.alpha = 0.6;		
 
 			}
 			default:
@@ -505,6 +457,11 @@ class PlayState extends MusicBeatState
 					add(road);	
 			}
 		}
+
+		darken = new FlxSprite(-250, 0).makeGraphic(FlxG.width * 5, FlxG.height * 5, FlxColor.BLACK);
+		darken.screenCenter();
+		darken.alpha = 1;
+
 		var gfVersion:String = 'gf';
 
 		switch (SONG.gfVersion)
@@ -605,7 +562,7 @@ class PlayState extends MusicBeatState
 
 		if (PlayState.SONG.song.toLowerCase() == 'discodevil')
 	{
-		preloadbfhole = new Boyfriend(1390, 450, 'bf-hole');
+		preloadbfhole = new Boyfriend(1090, 450, 'bf-hole');
 		add(preloadbfhole);
 		preloadbfhole.visible = false;
 	}
@@ -613,6 +570,7 @@ class PlayState extends MusicBeatState
 		if (curStage == 'disco')
 		{
 			add(DiscoLight);
+			darken.alpha = 0.4;
 			add(darken);
 		}
 		if (loadRep)
@@ -2294,6 +2252,7 @@ class PlayState extends MusicBeatState
 			else
 			{
 				trace('WENT BACK TO FREEPLAY??');
+				FlxG.sound.playMusic(Paths.music('freakyMenu'));
 				FlxG.switchState(new FreeplayState());
 			}
 		}

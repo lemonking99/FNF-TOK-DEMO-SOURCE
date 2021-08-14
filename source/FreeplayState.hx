@@ -49,13 +49,13 @@ class FreeplayState extends MusicBeatState
 			songs.push(new SongMetadata(data[0], Std.parseInt(data[2]), data[1]));
 		}
 
-		/* 
+		 
 			if (FlxG.sound.music != null)
 			{
 				if (!FlxG.sound.music.playing)
 					FlxG.sound.playMusic(Paths.music('freakyMenu'));
 			}
-		 */
+		
 
 		 #if windows
 		 // Updating Discord Rich Presence
@@ -140,7 +140,7 @@ class FreeplayState extends MusicBeatState
 			trace(md);
 		 */
 
-		var versionShit:FlxText = new FlxText(5, FlxG.height - 18, 0, (Main.watermarks ? " FNF TOK F3 DEMO BUILD AUGUST 1 2021 "  : ""), 12);
+		var versionShit:FlxText = new FlxText(5, FlxG.height - 18, 0, (Main.watermarks ? "FNF TOK F3 DEMO BUILD AUGUST 1 2021 "  : ""), 12);
 		versionShit.scrollFactor.set();
 		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit);
@@ -327,11 +327,6 @@ class FreeplayState extends MusicBeatState
 		#if !switch
 		intendedScore = Highscore.getScore(songHighscore, curDifficulty);
 		// lerpScore = 0;
-		#end
-
-		#if PRELOAD_ALL
-		FlxG.sound.playMusic(Paths.inst(songs[curSelected].songName), 0);
-
 		#end
 
 		var bullShit:Int = 0;

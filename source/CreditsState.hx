@@ -125,7 +125,7 @@ class CreditsState extends MusicBeatState
 
 		changeItem();
 
-		var versionShit:FlxText = new FlxText(5, FlxG.height - 18, 0, gameVer +  (Main.watermarks ? " FNF TOK FUNKCON 2021 DEMO BUILD AUGUST 1 2021 "  : ""), 12);
+		var versionShit:FlxText = new FlxText(5, FlxG.height - 18, 0, (Main.watermarks ? "FNF TOK F3 DEMO BUILD AUGUST 1 2021 "  : ""), 12);
 		versionShit.scrollFactor.set();
 		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit);
@@ -226,8 +226,8 @@ class CreditsState extends MusicBeatState
 		switch (daChoice)
 		{
 			case 'ninkey':
-				fancyOpenURL("https://twitter.com/NinKey6");
-			case 'artpanz':
+				fancyOpenURL("https://twitter.com/NinKey69");
+			case 'mol':
 				fancyOpenURL("https://twitter.com/ArtPanz");
 			case 'snak':
 				fancyOpenURL("https://twitter.com/200thSnak");
