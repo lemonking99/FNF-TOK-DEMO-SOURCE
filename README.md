@@ -16,7 +16,6 @@ Links: **GameBanana demo page - Coming Soon!**
 - [ArtPanz](https://twitter.com/ArtPanz) - Artist
 - [200thSnak](https://twitter.com/200thSnak) - Music, Charting
 - [LemonKing](https://twitter.com/1emonking) - Coding
-- [bubbabrine11](https://www.youtube.com/c/bubbabrine11/featured) - Copyright Free Instrumentals
 
 
 
@@ -73,4 +72,6 @@ This game was made with love to Newgrounds and its community. Extra love to Tom 
 - [ArtPanz](https://twitter.com/ArtPanz) - Artist
 - [200thSnak](https://twitter.com/200thSnak) - Music, Charting
 - [LemonKing](https://twitter.com/1emonking) - Coding
-- [bubbabrine11](https://www.youtube.com/c/bubbabrine11/featured) - Copyright Free Instrumentals
+
+
+- [XyleMusic](https://www.youtube.com/channel/UCQOA_0RUVW3tYiKJIjeIMRA) - Trailer Music!
