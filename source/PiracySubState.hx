@@ -18,9 +18,12 @@ class PiracySubState extends MusicBeatState
 	override function create()
 	{
 		super.create();
-		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('conceptsketch3', 'preload'));
-		bg.screenCenter();
+		
+		var bg:FlxSprite = new FlxSprite(0, -700).loadGraphic(Paths.image('conceptsketch3', 'preload'));
+		bg.setGraphicSize(Std.int(bg.width * 0.17));
+		bg.screenCenter(X);
 		add(bg);
+		
 		
 		var OrigamiLogo:FlxSprite = new FlxSprite(0, 0).loadGraphic(Paths.image('TheOrigamiKingLogo'));
 		OrigamiLogo.setGraphicSize(Std.int(OrigamiLogo.width * 0.3));
@@ -30,8 +33,8 @@ class PiracySubState extends MusicBeatState
 		add(OrigamiLogo);
 		
 
-		var txt:FlxText = new FlxText(0, 0, FlxG.width,
-			"'If you are reading this, you are most likely playing a pirated version of'\n 'Friday Night Funkin': The Origami King Demo'.\n\nThats totally fine! \nIf you enjoy the mod, all we ask is that you check out the official creators on twitter!! 
+		var txt:FlxText = new FlxText(0, 350, FlxG.width,
+			"'If you are reading this, you are most likely playing a pirated version of\n 'Friday Night Funkin': The Origami King Demo'.\n\nThats totally fine! \nIf you enjoy the mod, all we ask is that you check out the official creators on twitter!! 
 			\n\n @NinKey69 - Director/Artist\n @ArtPanz - Artist\n@200thSnak - Music\n@1emonking - Coding (and the one who knows what you're doing (;)
 			\n
 			Press 1 to enter options, and 2 to be brought to the credits. Press ESC to continue. ",

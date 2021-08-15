@@ -18,8 +18,10 @@ class WarningSubState extends MusicBeatState
 	override function create()
 	{
 		super.create();
-		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('conceptsketch3', 'preload'));
-		bg.screenCenter();
+		
+		var bg:FlxSprite = new FlxSprite(0, -700).loadGraphic(Paths.image('conceptsketch3', 'preload'));
+		bg.setGraphicSize(Std.int(bg.width * 0.17));
+		bg.screenCenter(X);
 		add(bg);
 		
 		
@@ -30,7 +32,7 @@ class WarningSubState extends MusicBeatState
 		OrigamiLogo.alpha = 0.8;
 		add(OrigamiLogo);
 		
-		var txt:FlxText = new FlxText(0, 0, FlxG.width,
+		var txt:FlxText = new FlxText(0, 350, FlxG.width,
 			"'Friday Night Funkin': The Origami King Demo'\n will last 15 minutes. Press 1 to enter options, and 2 to be brought to the credits.
 			\n
 			Thank you F3 for allowing us to take part!\n To people who enjoy the mod, more surprises are coming soon! \nPress ESC to continue. ",
@@ -40,7 +42,7 @@ class WarningSubState extends MusicBeatState
 		txt.borderColor = FlxColor.BLACK;
 		txt.borderSize = 3;
 		txt.borderStyle = FlxTextBorderStyle.OUTLINE;
-		txt.screenCenter();
+		txt.screenCenter(X);
 		add(txt);
 		
 

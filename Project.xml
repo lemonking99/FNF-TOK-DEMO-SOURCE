@@ -73,7 +73,6 @@
 	<assets path="assets/chapter1"    library="chapter1"    exclude="*.mp3" unless="web"/>
 	<assets path="assets/chapter3"    library="chapter3"    exclude="*.ogg" if="web"/>
 	<assets path="assets/chapter3"    library="chapter3"    exclude="*.mp3" unless="web"/>
-	<assets path="assets/chapter4"    library="chapter4"    exclude="*.ogg" if="web"/>
 	
 	<assets path='example_mods' rename='mods' embed='false'/>
 	<assets path='LICENSE' rename='LICENSE.txt' />

@@ -236,6 +236,11 @@ class FreeplayState extends MusicBeatState
 			FlxG.switchState(new CreditsState());
 		}
 
+		/* if (FlxG.keys.justPressed.THREE)
+		{
+			FlxG.switchState(new ThankYou());
+		}*/
+
 		if (accepted)
 		{
 			// pre lowercasing the song name (update)
