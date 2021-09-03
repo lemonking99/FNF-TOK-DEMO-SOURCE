@@ -9,7 +9,9 @@ Prepare for an epic adventure! **Friday Night Funkin: The Origami King** is a mo
 
 **THIS IS ONLY A DEMO MADE FOR F3. THIS IS NOT THE FULL RELEASE**
 
-Links: **GameBanana demo page - Coming Soon!**
+Links: **[GameJolt Mod Page](https://gamejolt.com/games/fnforigamiking/643605), [GameBanana Demo Page](https://gamebanana.com/mods/317459)**
+
+**WARNING: AS OF NOW, THE GAMEBANANA DEMO PAGE WILL NO LONGER BE UPDATED. **
 
 ### The Team:
 - [NinKey](https://twitter.com/NinKey69) - Director/Artist
